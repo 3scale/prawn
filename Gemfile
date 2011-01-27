@@ -1,5 +1,6 @@
 source :rubygems
 
+gem "ttfunk", "~>1.0.0"
 gem "pdf-reader", "~>0.9.0"
 
 group :test do
