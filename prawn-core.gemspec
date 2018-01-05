@@ -29,15 +29,8 @@ Gem::Specification.new do |spec|
                   "LICENSE"
                 ]
 
-  `git submodule --quiet foreach pwd`.split($\).each do |submodule_path|
-    Dir.chdir(submodule_path) do
-      submodule_files = `git ls-files`.split($\).reject { |path| path =~ /\.ttf/ }
-      submodule_files_paths = submodule_files.map do |filename|
-        "#{submodule_path}/#{filename}".gsub "#{dir}/", ""
-      end
-      spec.files += submodule_files_paths
-    end
-  end
+  spec.add_runtime_dependency('pdf-reader', '~>0.9.0')
+  spec.add_runtime_dependency('ttfunk', '~> 1.0', '>= 1.0.0')
 
   spec.test_files = Dir['spec/*_spec.rb']
   spec.has_rdoc = true
