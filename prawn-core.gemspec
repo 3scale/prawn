@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
                 ]
 
   spec.add_runtime_dependency('pdf-reader', '~>0.9.0')
-  spec.add_runtime_dependency('ttfunk', '~> 1.0', '>= 1.0.0')
+  spec.add_runtime_dependency('ttfunk', '~> 1.0', '>= 1.5.1')
 
   spec.test_files = Dir['spec/*_spec.rb']
   spec.has_rdoc = true
