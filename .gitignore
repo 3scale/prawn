@@ -1,3 +1,5 @@
 *.swp
 nbproject
 pkg
+.rvmrc
+.bundle
