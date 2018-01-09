@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   ]
   spec.email = [
     'gregory.t.brown@gmail.com',
-    'guicassolato@gmail.com'
+    'gcassolato@redhat.com'
   ]
   spec.licenses = %w[Ruby GPL-2.0 GPL-3.0]
 
